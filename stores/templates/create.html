@@ -1,0 +1,15 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Create Store</title>
+</head>
+<body>
+	<form action="{% url 'store-create' %}" method="POST" enctype="multipart/form-data">
+		{% csrf_token %}
+		{{form}}
+
+		<input type="submit" value="Create" class="btn" style="background-color: #e3f2fd; color: black;">
+	</form>
+	
+</body>
+</html>

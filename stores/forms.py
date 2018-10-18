@@ -5,3 +5,8 @@ class StoreModelForm(forms.ModelForm):
     class Meta:
         model = Store
         fields = ['name', 'description']
+
+class StoreCreateForm(forms.ModelForm):
+	class Meta:
+		model = Store
+		fields = ['name', 'description']
